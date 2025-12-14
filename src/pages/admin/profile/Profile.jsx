@@ -8,7 +8,7 @@ import axios from "axios";
 const Profile = () => {
   const { getUserDetails } = useAuthContext();
   const userData = getUserDetails();
-  console.log("user Data ==>", userData);
+  // console.log("user Data ==>", userData);
 
   const [formData, setFormData] = useState({
     fullName: userData?.name,
@@ -44,7 +44,7 @@ const handleSubmit = async (e) => {
   e.preventDefault();
 
  
-console.log("formData ==>", formData);
+// console.log("formData ==>", formData);
 
   const form = new FormData();
   form.append("id", userData.role === 'admin' ? userData.companyId : userData.staffId);
@@ -69,7 +69,7 @@ console.log("formData ==>", formData);
       }
     );
 
-    console.log("UPDATE RESULT ==>", res.data);
+    // console.log("UPDATE RESULT ==>", res.data);
 
     alert("Profile Updated Successfully");
     setIsEditing(false);
@@ -97,7 +97,7 @@ console.log("formData ==>", formData);
               <div className="flex items-center gap-[12px]">
                 {/* Profile Photo */}
                 <div className="relative">
-                  {console.log("form Data ==>", formData)}
+                  {/* {console.log("form Data ==>", formData)} */}
                   <div className="flex items-center justify-center overflow-hidden">
                     <img
                       src={formData.profileImage}

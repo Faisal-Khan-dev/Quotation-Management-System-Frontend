@@ -265,7 +265,7 @@ export default function ClientDashboard() {
 
                 return (
                   <tr key={client._id} className="hover:bg-gray-50">
-                    {console.log(customer.customerName)}
+                    {/* {console.log(customer.customerName)} */}
                     <td className="px-6 py-4 text-sm text-gray-900">
                       {customer.customerName}
                     </td>

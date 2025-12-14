@@ -10,7 +10,7 @@ const Sidebar = ({ isOpen, closeSidebar }) => {
   const {getUserDetails} = useAuthContext()
   const userData = getUserDetails();
 
-  console.log("userData ==>", userData);
+  // console.log("userData ==>", userData);
   
   return (
     <aside

@@ -9,7 +9,7 @@ export const AuthProvider = ({ children }) => {
   
   const navigate = useNavigate();
 
-  console.log("token ==>",token);
+  // console.log("token ==>",token);
   
 
   useEffect(() => {
